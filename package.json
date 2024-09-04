@@ -1,0 +1,21 @@
+{
+  "name": "jain-temple",
+  "version": "1.0.0",
+  "description": "Jain Temple Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Bhavya Shah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0"
+  }
+}

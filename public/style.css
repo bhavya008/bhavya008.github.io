@@ -1,0 +1,276 @@
+h3{
+    font-family: Helvetica, sans-serif;
+}
+
+p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.img-rounded{
+    border-radius: 10px;
+}
+
+/* Additional styles */
+.content-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.infoPara {
+    flex: 1; /* Take remaining space */
+    margin-right: 20px; /* Adjust margin between paragraph and image */
+}
+
+.image-container {
+    flex-shrink: 0; /* Don't allow shrinking */
+    width: 50%; /* Adjust image width as needed */
+    display: flex; /* Enable flexbox for image container */
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image fits container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    width: 100%; /* Set width to 100% to fill the container */
+    height: 600px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the entire image is visible */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%; /* Adjust the width as needed */
+    top: 50%; /* Position vertically at the center */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 1; /* Ensure the buttons are above the carousel */
+}
+
+.carousel-control-prev {
+    left: 0; /* Position at the left edge */
+}
+
+.carousel-control-next {
+    right: 0; /* Position at the right edge */
+}
+
+/* .tiro-devanagari hindi-regular {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: normal;
+}   */
+
+.row{
+    margin-top: 25px;
+}
+
+.feature p {
+    text-align: justify;
+}
+
+/* /////////////////////////////////////////////////////  */
+
+.timeline {
+    border-left: 3px solid #ffd700;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(234, 245, 114, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #ffd700;
+    box-shadow: 0 0 0 3px #ffd700;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #ffd700;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+/* ////////////////////////////////////////////////////   */
+
+
+/* Hide the carousel on screens smaller than 768px (typical mobile devices) */
+/* @media (max-width: 767.98px) {
+    .carousel {
+        display: none;
+    }
+
+  
+}    */
+
+.heading {
+    color: hsl(0, 0%, 28%);
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+
+  .heading:hover span {
+    color: #ffd700; /* Light gold color */
+  }
+  
+  .btn{
+    color: #000;
+    background-color: #ffd700;
+    border: #ffd700;
+  }
+
+  
+  .btn:hover{
+    background-color: #000;
+    color: #ffd700;
+    border: #000;
+  }
+
+  .shadow-card {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+svg{
+    color: #ffd700;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#donateBtn {
+    background-color: #ffd700; /* Blue background color */
+    color: #000000; /* White text color */
+    font-size: 24px; /* Larger font size */
+    padding: 15px 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    /* Add more styles as needed */
+  }
+
+#donateBtn:hover{
+    background-color: #000000;
+    color: #ffd700;
+}
+
+.coming-soon-image {
+    position: absolute;
+    top: -10px; /* Adjust position as needed */
+    right: 200px; /* Adjust position as needed */
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
